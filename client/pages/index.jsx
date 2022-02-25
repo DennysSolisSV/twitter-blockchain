@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
-import { Sidebar } from '../components/Sidebar';
+import { Sidebar, Feed } from '../components';
+
 
 const style = {
   wrapper: `flex justify-center h-screen w-screen select-none bg-[#15202b] text-white`,
@@ -11,7 +12,7 @@ const Home = () => {
     <div className={style.wrapper}>
       <div className={style.content}>
         <Sidebar/>
-        <h2>Feed</h2>
+        <Feed />
         <h2>Witgets</h2>
       </div>
     </div>
