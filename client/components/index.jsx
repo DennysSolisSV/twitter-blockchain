@@ -1,3 +1,4 @@
-export {default as Sidebar} from '../components/Sidebar';
-export {default as SidebarOption} from '../components/SidebarOption';
-export {default as Feed} from '../components/home/Feed';
+export {default as Sidebar} from './Sidebar';
+export {default as SidebarOption} from './SidebarOptionSidebarOption';
+export {default as Feed} from './Feed';
+export {default as Widgets} from './Widgets';

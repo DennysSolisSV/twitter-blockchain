@@ -13,28 +13,28 @@ const tweets = [
     {
         displayName:'Qazi',
         username: '0x8Cd390f697ffDc176f1B70D2F3BB3083698434fD',
-        avatar: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mrchamba.com%2Fservicios%2Fflor98%2Ffoto-de-perfil-para-tu-ig-facebook-youtube-o-lo-que-quieras%2F&psig=AOvVaw0FMiBECVHHtxMzsQ5-9zJ6&ust=1645899164335000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOj587u6m_YCFQAAAAAdAAAAABAF',
-        text:'gm',
+        avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm33RWxif3d9xzeemPVd05DD4_o4zWMsibkw&usqp=CAU',
+        text:'gmeggdfghdfgdfgdfgdf dfgdfgdfgdfgdfg dfgdfgdfgfdgdfg ',
         isProfileImageNft: false,
-        timestamp:'2020-06-01T12:00:00.000Z',
+        timestamp:'2021-06-01T12:00:00.000Z',
     },{
         displayName:'Qazi2',
         username: '0x8Cd390f697ffDc176f1B70D2F3BB3083698434fD',
-        avatar: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mrchamba.com%2Fservicios%2Fflor98%2Ffoto-de-perfil-para-tu-ig-facebook-youtube-o-lo-que-quieras%2F&psig=AOvVaw0FMiBECVHHtxMzsQ5-9zJ6&ust=1645899164335000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOj587u6m_YCFQAAAAAdAAAAABAF',
+        avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm33RWxif3d9xzeemPVd05DD4_o4zWMsibkw&usqp=CAU',
         text:'gm',
         isProfileImageNft: false,
         timestamp:'2020-06-01T12:00:00.000Z',
     },{
         displayName:'Qazi3',
         username: '0x8Cd390f697ffDc176f1B70D2F3BB3083698434fD',
-        avatar: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mrchamba.com%2Fservicios%2Fflor98%2Ffoto-de-perfil-para-tu-ig-facebook-youtube-o-lo-que-quieras%2F&psig=AOvVaw0FMiBECVHHtxMzsQ5-9zJ6&ust=1645899164335000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOj587u6m_YCFQAAAAAdAAAAABAF',
+        avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm33RWxif3d9xzeemPVd05DD4_o4zWMsibkw&usqp=CAU',
         text:'gm',
         isProfileImageNft: false,
         timestamp:'2020-06-01T12:00:00.000Z',
     },{
         displayName:'Qazi4',
         username: '0x8Cd390f697ffDc176f1B70D2F3BB3083698434fD',
-        avatar: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mrchamba.com%2Fservicios%2Fflor98%2Ffoto-de-perfil-para-tu-ig-facebook-youtube-o-lo-que-quieras%2F&psig=AOvVaw0FMiBECVHHtxMzsQ5-9zJ6&ust=1645899164335000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOj587u6m_YCFQAAAAAdAAAAABAF',
+        avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm33RWxif3d9xzeemPVd05DD4_o4zWMsibkw&usqp=CAU',
         text:'gm',
         isProfileImageNft: false,
         timestamp:'2020-06-01T12:00:00.000Z',
@@ -53,7 +53,7 @@ const Feed = () => {
           <Post 
             key={index}
             displayName={tweet.displayName}
-            username={tweet.username}
+            username={`${tweet.username.slice(0,4)}...${tweet.username.slice(-4)}`}
             avatar={tweet.avatar}
             text={tweet.text}
             isProfileImageNft={tweet.isProfileImageNft}
