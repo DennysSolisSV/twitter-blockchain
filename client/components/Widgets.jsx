@@ -28,7 +28,42 @@ const Widgets = () => {
     <div className={style.wrapper}>
       <div className={style.searchBar}>
         <BiSearch className={style.searchIcon} />
-        <input type='text' placeholder='Search twitter' className={} />
+        <input type='text' placeholder='Search twitter' className={style.inputBox} />
+      </div>
+      <div className={style.section}>
+        <div className={style.title}>What's happening?</div>
+        {news.map((item, index)=> (
+          <div key={index} className={style.item}>
+            <div className={style.newsItemLeft}>
+              <div className={style.newsItemCategory}>{item.category}</div>
+              <div className={style.newsItemTitle}>{item.title}</div>
+            </div>
+            <div className={style.newsItemRight}>
+              <img 
+                src={item.image}
+                alt={item.category}
+                className={style.newsItemImage}
+              />
+            </div>
+          </div>
+        ))}
+        <div className={style.showMore}>Show more</div>
+      </div>
+      <div className={style.section}>
+          <div className={style.title}>Who to follow</div>
+          {whoToFollow.map((item, index) => (
+            <div key={index} className={style.item}>
+              <div>
+                <img src={item.avatar} alt={item.handle} className={style.followAvatar}/>
+              </div>
+              <div className={style.profileDetails}>
+                <div className={style.name}>{item.name}</div>
+                <div className={style.handle}>{item.handle}</div>
+              </div>
+              <div className={style.followButton}>Follow</div>
+
+            </div>
+          ))}
       </div>
     </div>
   )
